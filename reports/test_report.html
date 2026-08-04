@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SAMPLE TEMPLATE - Not a Real Test Run</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 40px; color: #222; }
+  .banner { background: #fff3cd; border: 1px solid #ffcc00; padding: 16px; border-radius: 6px; margin-bottom: 24px; }
+  code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; }
+  table { border-collapse: collapse; width: 100%; margin-top: 16px; }
+  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+  th { background: #f0f0f0; }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <strong>This is a placeholder file, not a real pytest-html report.</strong><br>
+    WorkFlow Pro is a hypothetical application for this assignment, so these tests were never
+    executed against a live system and no real pass/fail results exist. This file exists only
+    to show where the generated report will be placed.
+  </div>
+
+  <h1>How to generate the real report</h1>
+  <p>Once <code>BASE_URL</code> and the environment variables in <code>.env</code> point to a
+  reachable WorkFlow Pro environment, run:</p>
+  <pre>pytest --html=reports/test_report.html --self-contained-html</pre>
+  <p>This will overwrite this file with an actual pytest-html report containing real results.</p>
+
+  <h2>Expected report contents (for reference only)</h2>
+  <table>
+    <tr><th>Test</th><th>Status</th></tr>
+    <tr><td>tests/test_login.py::test_user_login</td><td>not executed</td></tr>
+    <tr><td>tests/test_login.py::test_login_invalid_credentials_shows_error</td><td>not executed</td></tr>
+    <tr><td>tests/test_multi_tenant.py::test_company2_user_sees_own_data</td><td>not executed</td></tr>
+    <tr><td>tests/test_multi_tenant.py::test_company2_user_cannot_see_company1_data</td><td>not executed</td></tr>
+    <tr><td>tests/test_project_creation_flow.py::test_project_creation_flow</td><td>not executed</td></tr>
+  </table>
+</body>
+</html>

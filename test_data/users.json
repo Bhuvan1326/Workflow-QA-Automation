@@ -1,0 +1,31 @@
+{
+  "company1": {
+    "admin": {
+      "role": "admin",
+      "tenant_id": "company1",
+      "email_env_var": "COMPANY1_EMAIL"
+    },
+    "manager": {
+      "role": "manager",
+      "tenant_id": "company1",
+      "email_env_var": "COMPANY1_MANAGER_EMAIL"
+    },
+    "employee": {
+      "role": "employee",
+      "tenant_id": "company1",
+      "email_env_var": "COMPANY1_EMPLOYEE_EMAIL"
+    }
+  },
+  "company2": {
+    "admin": {
+      "role": "admin",
+      "tenant_id": "company2",
+      "email_env_var": "COMPANY2_EMAIL"
+    },
+    "employee": {
+      "role": "employee",
+      "tenant_id": "company2",
+      "email_env_var": "COMPANY2_EMPLOYEE_EMAIL"
+    }
+  }
+}

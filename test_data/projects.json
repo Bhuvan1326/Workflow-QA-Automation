@@ -1,0 +1,12 @@
+{
+  "company1_sample_project": {
+    "name": "Company1 Sample Project",
+    "description": "Sample project used for UI/API automation checks",
+    "team_members": []
+  },
+  "company2_sample_project": {
+    "name": "Company2 Sample Project",
+    "description": "Sample project used for tenant isolation checks",
+    "team_members": []
+  }
+}
