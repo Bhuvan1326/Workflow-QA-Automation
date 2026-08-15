@@ -7,7 +7,7 @@ load_dotenv()
 
 
 def _env_available() -> bool:
-    """Whether a real, reachable WorkFlow Pro environment was provided."""
+    #Whether a real, reachable WorkFlow Pro environment was provided.
     return os.getenv("WORKFLOWPRO_ENV_AVAILABLE", "false").strip().lower() == "true"
 
 
@@ -38,11 +38,10 @@ def company2():
 
 @pytest.fixture(autouse=True)
 def _require_live_env():
-    """Every test here talks to a real WorkFlow Pro instance.
+    #Every test here talks to a real WorkFlow Pro instance.
 
-    Without WORKFLOWPRO_ENV_AVAILABLE=true, skip instead of failing on
-    DNS/SSL errors against the assessment's placeholder URL.
-    """
+    #Without WORKFLOWPRO_ENV_AVAILABLE=true, skip instead of failing on DNS/SSL errors against the assessment's placeholder URL.
+    
     if not _env_available():
         pytest.skip("WorkFlow Pro live test environment is not available.")
 
